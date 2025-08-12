@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body >
+    <section class="flex justify-center items-center h-screen">
+        <div>
+    <div class=" py-5 px-15 rounded-xl grid grid-cols-3 gap-x-7">
+     <div class="w-75 h-45 py-5 px-10 rounded-xl bg-yellow-400 ">
+
+        <h1 class="pt-10 font-bold text-4xl text-white">Deposit</h1>
+        <p class="font-bold text-4xl text-white">$ <span id="deposit">000</span></p>
+     </div>
+     <div class="w-75 h-45 py-5 px-10 rounded-xl bg-sky-400 ">
+<h1 class="pt-10 font-bold text-4xl text-white">Withdraw</h1>
+        <p class="font-bold text-4xl text-white">$ <span id="withdraw" >000</span></p>
+     </div>
+     <div class="w-75 h-45 py-5 px-10 rounded-xl bg-green-400 ">
+<h1 class="pt-10 font-bold text-4xl text-white">Balance</h1>
+        <p class="font-bold text-4xl text-white">$ <span id="balance">3000</span></p>
+     </div>
+    </div>
+
+
+
+    <div class=" py-5 px-15 rounded-xl  grid grid-cols-2 gap-x-7">
+        <div class=" pt-10 h-65 px-15 rounded-xl bg-green-200 ">
+
+ 
+            <label class=" text-[20px]  " for="lname">Please Deposit</label><br>
+  <input class="bg-slate-100 px-3 h-10 mt-5 w-70 border rounded-sm " type="number" id="inputDeposit"  placeholder="$ Deposit Amount"><br><br>
+  <input class="h-10 border rounded-sm px-5  mt-3 bg-emerald-600 " type="submit" id="depositBtn" value="Deposit">
+     </div>
+
+
+     <div class=" pt-10 h-65 px-15 rounded-xl bg-red-200 ">
+        <label class=" text-[20px]  " for="lname">Please Withdrow</label><br>
+  <input class="bg-slate-100 px-3 h-10 mt-5 w-70 border rounded-sm " type="number" id="inputWithdrow"  placeholder="$ Withdrow Amount"><br><br>
+  <input class="h-10 border rounded-sm px-5 mt-3 bg-red-400 " type="submit" id="withdrowBtn" value="Withdrow">
+
+     </div>
+    </div>
+    </div>
+    </section>
+    <script src="./js/bank.js"></script>
+</body>
+</html>
